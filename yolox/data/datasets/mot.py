@@ -99,7 +99,7 @@ class MOTDataset(Dataset):
             self.data_dir, self.name, file_name
         )
         img = cv2.imread(img_file)
-        #assert img is not None
+        assert img is not None
 
         return img, res.copy(), img_info, np.array([id_])
 
